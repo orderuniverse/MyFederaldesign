@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                                http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ogog.federal</groupId>
+  <artifactId>federal-commons</artifactId>
+  <version>1.0.0</version>
+
+  <!-- 配置项目打包格式 : jar -->
+  <packaging>jar</packaging>
+
+  <!-- 配置项目父级依赖：Federal Parent [BEGIN] -->
+  <parent>
+    <groupId>com.ogog.federal</groupId>
+    <artifactId>federal-parent</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <!-- 配置项目父级依赖：Federal Parent [END] -->
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <!-- 配置依赖: Spring Cloud Starter Netflix Eureka Client 依赖 [BEGIN] -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+    <!-- 配置依赖: Spring Cloud Starter Netflix Eureka Client 依赖 [END] -->
+
+    <!-- 配置依赖: Spring Cloud Starter OpenFeign 依赖 [BEGIN]-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+    </dependency>
+    <!-- 配置依赖: Spring Cloud Starter OpenFeign 依赖 [END]-->
+
+    <!-- 配置依赖: Spring Boot Starter Data Redis [BEGIN]-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    <!-- 配置依赖: Spring Boot Starter Data Redis [END]-->
+
+    <!--  配置依赖: Project Lombok 依赖 [BEGIN]-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+    </dependency>
+    <!--  配置依赖:Project Lombok 依赖 [END]-->
+
+    <!-- 配置依赖: MapStruct Core [BEGIN] -->
+    <dependency>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct</artifactId>
+      <version>${mapstruct.version}</version>
+    </dependency>
+    <!-- 配置依赖: MapStruct Core [END] -->
+
+    <!-- 配置依赖: MapStruct Processor [BEGIN]-->
+    <dependency>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct-processor</artifactId>
+      <version>${mapstruct-processor.version}</version>
+    </dependency>
+    <!-- 配置依赖: MapStruct Processor [END]-->
+
+    <!-- 配置依赖: Hutool All [BEGIN]-->
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>${hutool-all.version}</version>
+    </dependency>
+    <!-- 配置依赖: Hutool All [END]-->
+
+    <!-- 配置依赖: Spring Boot Starter Validation [BEGIN]-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+    <!-- 配置依赖: Spring Boot Starter Validation [END]-->
+  </dependencies>
+
+</project>
