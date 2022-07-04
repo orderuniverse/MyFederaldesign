@@ -10,6 +10,8 @@ import java.util.Map;
 
 /**
  * <b>Token 工具类<b>
+ * @author orderuniverse
+ * @date 2022/7/4
  */
 public class TokenUtil {
 	private static final String PAYLOAD_KEY = "payload";

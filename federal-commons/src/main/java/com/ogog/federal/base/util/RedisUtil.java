@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * <b>Redis 操作工具类<b>
+ * @author orderuniverse
+ * @date 2022/7/4
  */
 @Component("regisUtil")
 public class RedisUtil {

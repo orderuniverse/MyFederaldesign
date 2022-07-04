@@ -4,6 +4,8 @@ import com.ogog.federal.base.util.BaseConstants;
 
 /**
  * <b>系统响应枚举信息</b>
+ * @author orderuniverse
+ * @date 2022/7/4
  */
 public enum ResponseEnum {
 	RESPONSE_CODE_SUCCESS(BaseConstants.BASE_RESPONSE_SUCCESS,"系统业务处理完毕响应成功"),
@@ -13,7 +15,7 @@ public enum ResponseEnum {
 	private Integer code;                       // 编码
 	private String remark;                      // 说明
 
-	ResponseEnum(Integer code, String remark) {
+	private ResponseEnum(Integer code, String remark) {
 		this.code = code;
 		this.remark = remark;
 	}
