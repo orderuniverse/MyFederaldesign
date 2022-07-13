@@ -1,4 +1,4 @@
-package com.ogog.federal.pojo.entity;
+package com.ogog.federal.base.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
